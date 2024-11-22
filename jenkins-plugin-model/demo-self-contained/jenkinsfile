@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh '''
                     sudo apt-get update
-                    sudo usermod -aG docker jenkins
+                    sudo usermod -a -G docker jenkins
                     sudo systemctl restart docker
                 '''
             }
